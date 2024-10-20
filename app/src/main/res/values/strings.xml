@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AlarmClock</string>
+    <string name="title_text">Подбор персонала</string>
+    <string name="save">Сохранить</string>
+    <string name="exit">Выход</string>
+    <string name="name">Имя</string>
+    <string name="text_age">Возраст</string>
+    <string name="last_name">Фамилия</string>
+    <string name="position">Должность</string>
+</resources>
