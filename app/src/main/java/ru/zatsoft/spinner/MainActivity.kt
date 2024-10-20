@@ -61,10 +61,14 @@ class MainActivity : AppCompatActivity(), Removable {
                    view: View?,
                    position: Int,
                    id: Long
-               ) { selectedItem = parent?.getItemAtPosition(position) as String }
+               ) { if(position > 0)
+                      selectedItem = parent?.getItemAtPosition(position) as String
+                   else
+                       selectedItem = " "
+               }
 
                override fun onNothingSelected(parent: AdapterView<*>?)
-               { selectedItem = parent?.getItemAtPosition(0) as String }
+               { selectedItem = " " }
            }
         binding.spinner.onItemSelectedListener = itemSelected
 
